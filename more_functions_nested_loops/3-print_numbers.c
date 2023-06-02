@@ -13,5 +13,5 @@ int i;
 	{
 		_puchar(i);
 	}
-_putchar('\n');
+_puchar('\n');
 }
