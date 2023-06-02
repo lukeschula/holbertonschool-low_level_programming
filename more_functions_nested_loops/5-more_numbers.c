@@ -6,7 +6,7 @@
  */
 void more_numbers(void)
 {
-	int i, j;
+int i, j;
 
 	for (i = 1; i <= 10; i++)
 	{
@@ -16,6 +16,6 @@ void more_numbers(void)
 				_putchar('1');
 			_putchar (j % 10 + '0');
 		}
-		_putchar('\n');
+_putchar('\n');
 	}	
 }	
