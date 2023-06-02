@@ -4,14 +4,17 @@
  *
  * Return:void
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
-int i;
-
-	for (i = 48; i <= 57; i++)
+	int i, j;
+	for (i = 1; i<= 10; i++)
 	{
-		if ((i != 50) && (i != 52))
-			_putchar(i);
+	for (j = 0; j<= 14; j++)
+	{
+	if (j >= 10)
+	_putchar('1');	
+	_putchar (j % 10 + '0');
 	}
-_putchar('\n');
+	_putchar('\n');
+	}	
 }
