@@ -1,31 +1,24 @@
-#include "main.h"
-#include <stdio.h>
+ #include "main.h"
+
 /**
- * rev_string - This fuction print a string reverser
+ * puts2 - Write a function that prints every other character of a string, 
+ *         starting with the first character, followed by a new line.
  *
- *@s: this is the pointer that point to a string
+ * @s: This pointer point to a char or string
+ *
+ *
  */
 
-void rev_string(char *s)
+void puts2(char *s)
 {
-	int a, len;
+	int a;
 
-	char *begin, *end = s;
-
-	for (a = 0; s[a] != '\0' && s[a + 1] != '\0'; a++)
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		end++;
+		if (a % 2 == 0)
+		{
+			_putchar(s[a]);
+		}
 	}
-	len = a + 1;
-	begin = s;
-	for (a = 0; a < len / 2; a++)
-	{
-		char x;
-		x = *end;
-		*end = *begin;
-		*begin = x;
-		begin++;
-		end--;
-	}
-	end[len + 1] = '\0';
+	_putchar('\n');
 }
