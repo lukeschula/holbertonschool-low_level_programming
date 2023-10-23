@@ -10,7 +10,7 @@
  */
 char *_strdup(char *str)
 {	
-	char *ary
+	char *ary;
 	int i, j;
 
 	if (str == NULL)
@@ -19,12 +19,12 @@ char *_strdup(char *str)
 	}	
 	j = 0;
 
-	for (i = 0; str[i]; i++);
+	for (i = 0; str[i] != '\0'; i++);
 	{
 		j++;
 	}
 
-	ary = malloc(strlen(str) + 1);
+	*ary = malloc(strlen(str) + 1);
 
 	if (ary == NULL)
 	{
