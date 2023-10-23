@@ -22,24 +22,24 @@ char *str_concat(char *s1, char *s2)
 	{	
 		s2 = "";
 	}
-	for (x = 0; s1[x] || s2[x] x++;)
+	for (x = 0; s1[x] || s2[x]; x++)
 	{	
 		z++;
 	}
 
 	r2 = malloc(sizeof(char) * z);
 
-	if (r2 = NULL)
+	if (r2 == NULL)
 	{
 		return (NULL);
+	}
+	for (x = 0; s1[x]; x++)
+	{
+		r2[y++] = s1[x];
 	}
 	for (x = 0; s2[x]; x++)
 	{
 		r2[y++] = s2[x];
-	}
-	for (x = 0; s1[x]; x++)
-	{
-		r1[y++ = s1[x];
 	}
 	return (r2);
 }
