@@ -16,23 +16,23 @@ char *_strdup(char *str)
 	if (str == NULL)
 	{	
 		return(NULL);
-		j = 0;
+		i = 0;
 	}
 
-	for (i = 0; str[i] != '\0'; i++);
+	while  (str[i] != '\0')
 	{
-		j++;
+		i++;
 	}
 
-	ary = malloc(sizeof(char) * j + 1);
+	ary = malloc(sizeof(char) * i + 1);
 
 	if (ary == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[i]; i++)
+	for (j = 0; str[j]; j++)
 	{
-		ary[i] = str[i];
+		ary[j] = str[j];
 	}
 	return (ary);
 }	
