@@ -27,7 +27,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	coco = yoyo;
 
-	for (rep = 0; 0 < (size * nmemb); rep++)
+	for (rep = 0; rep < (size * nmemb); rep++)
 	{
 		coco[rep] = '\0';
 	}
