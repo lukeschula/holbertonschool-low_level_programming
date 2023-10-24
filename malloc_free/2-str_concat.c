@@ -7,23 +7,23 @@
  * s1: first string
  * s2: string to add at the end of first string
  *
- * Return: pointer to newly allocated string concatenation 
+ * Return: pointer to newly allocated string concatenation
  */
 char *str_concat(char *s1, char *s2)
-{	
+{
 	char *r2;
 	int x, y = 0, z = 0;
 
 	if (s1 == NULL)
-	{	
+	{
 		s1 = "";
 	}
-	if (s2 == NULL) 
-	{	
+	if (s2 == NULL)
+	{
 		s2 = "";
 	}
 	for (x = 0; s1[x] || s2[x]; x++)
-	{	
+	{
 		z++;
 	}
 
@@ -44,4 +44,4 @@ char *str_concat(char *s1, char *s2)
 	return (r2);
 }
 
-	
+
