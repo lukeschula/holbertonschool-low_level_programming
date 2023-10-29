@@ -5,7 +5,7 @@
  * @t: pointer to the string being measured
  * Return: the length of the string
  */
-int_strlen(char *n)
+int _strlen(char *n)
 {
 	int x = 0;
 
@@ -21,7 +21,7 @@ int_strlen(char *n)
  * @rtp: pointer to the copy of the string
  * Return: the pointer to ptr
  */
-char *_strcpy(char *ptr char *rtp)
+char *_strcpy(char *ptr, char *rtp)
 {
 	int a = 0;
 	int b;
@@ -34,7 +34,7 @@ char *_strcpy(char *ptr char *rtp)
 	{
 		ptr[b] = rtp[b];
 	}
-	prt[b] = '\0';
+	ptr[b] = '\0';
 
 	return (ptr);
 }	
