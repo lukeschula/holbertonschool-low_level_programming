@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 
 
-	for (in = 0; in < n; in++;)
+	for (in = 0; in < n; in++)
 	{
 		ci = va_arg(man, char *);
 
@@ -29,11 +29,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		else 
 			printf("%s", ci);
 
-		if (in != (n - 1) && seperator != NULL)
-			printf("%s", seperator);
+		if (in != (n - 1) && separator != NULL)
+			printf("%s", separator);
 	}
 
 	printf("\n");
 
-	va_end(ci);
+	va_end(man);
 }
