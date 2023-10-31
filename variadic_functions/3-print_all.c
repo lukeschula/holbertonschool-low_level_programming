@@ -1,22 +1,55 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
+
 /**
- * print_all - function that prints anything
+ * Description:  print_all - function that prints anything
  *
  * @format: constant character being eecuted
  * 
  * Return: 0
  */
-void print_char(va_list arg);
-void print_int(va_list arg);
-void print_float(va_list arg);
-void print_string(va_list arg);
-void print_all(const char * const format, ...);
+void print_all(const char * const format, ...)
 {
-	va_list print;
-	int a = 0;
-	int b = 0;
-	char *ptr = "";
+	int n = 0;
+	char *ptr;
+	char *bvb = "";
 
-	va_start(all, format);
+	va_list list;
 
-	while (format && (*(format + 
+	va_start(list, format);
+
+	if (format)
+	{
+		while (format[n])
+		{
+			switch (format[n])
+			{
+				case 'c':
+					printf("%s%c", bvb, va_arg(list, int));
+					break;
+				case 'i':
+					printf("%s%d", bvb, va_arg(list, int));
+					break;
+				case 'f':
+					printf("%s%f", bvb, va_arg(list, int));
+					break;
+				case 's':
+					ptr = va_arg(list, char *);
+					if (!ptr)
+						ptr = "(nil)"
+					printf("%s%s", bvb, ptr);
+					break;
+				default:
+					n++;
+					continue;
+			}
+			bvb = ",";
+			n++;
+		}
+	}
+	printf("\n");
+	va_end(list);
+}
+						
+				
