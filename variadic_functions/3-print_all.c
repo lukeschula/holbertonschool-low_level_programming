@@ -32,12 +32,12 @@ void print_all(const char * const format, ...)
 					printf("%s%d", bvb, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%f", bvb, va_arg(list, int));
+					printf("%s%d", bvb, va_arg(list, int));
 					break;
 				case 's':
 					ptr = va_arg(list, char *);
 					if (!ptr)
-						ptr = "(nil)"
+						ptr = "(nil)";
 					printf("%s%s", bvb, ptr);
 					break;
 				default:
