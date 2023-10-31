@@ -23,14 +23,14 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 
 	x = atoi(argv[1]);
 	ptr = argv[2];
-	y = atoi(arg[3]);
+	y = atoi(argv[3]);
 
-	if (get_op_func(op) == NULL || op[1] != '\0')
+	if (get_op_func(op) == NULL || ptr[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*op == '/' && y == 0) || (*op == '%' && y == 0))
+	if ((*ptr == '/' && y == 0) || (*ptr == '%' && y == 0))
 	{
 		printf("Error\n");
 		exit(100);
