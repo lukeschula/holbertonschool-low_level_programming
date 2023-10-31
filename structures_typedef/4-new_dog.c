@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * _strlen - returns the length of the string 
+ * _strlen - returns the length of the string
  * @t: pointer to the string being measured
  * Return: the length of the string
  */
@@ -54,24 +54,24 @@ dog_t *new_dog(char *name, float age, char *owner)
 	woof = malloc(sizeof(dog_t));
 
 	if (woof == NULL)
-	{ 
+	{
 		return (NULL);
 	}
 	woof->name = malloc(sizeof(char) * (m + 1));
 
 	if (woof->name == NULL)
 	{
-		free (woof);
+		free(woof);
 		return (NULL);
 	}
 	woof->owner = malloc(sizeof(char) * (n + 1));
-	
+
 	if (woof->owner == NULL)
 	{
 		free(woof);
 		free(woof->name);
 		return (NULL);
-	}	
+	}
 	_strcpy(woof->name, name);
 	_strcpy(woof->owner, owner);
 	woof->age = age;
