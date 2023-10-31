@@ -3,14 +3,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-/*
- * Description: struct_dog - structured classified as a dog
+/**
+ * struct dog - structure classified as a dog
+ * @name: pointer to name of dog
+ * @owner: pointer to owner of dog
+ * @age: pointer to age of dog
  *
- * @name: char pointer, pointing to the name of the dog
- * @age: age of dog, displayed as a float
- * @owner: char pointer, pointing to the name of the owner
- *
+ * Description: defines new type struct dog
  */
 typedef struct dog
 {
