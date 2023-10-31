@@ -2,10 +2,12 @@
 #include "dog.h"
 
 /**
- *init_dog - intializes srtuct dog
+ * Description: init_dog - intializes srtuct dog
+ * Description: defines new type struct dog
  *
- * @d: pointer to the struct 
- * @name: pointer to the name of the dog 
+ *
+ * @d: pointer to the struct
+ * @name: pointer to the name of the dog
  * @age: input for the age of the dog, represented in a float type
  * @owner: pointer to the owner of the dog
  */

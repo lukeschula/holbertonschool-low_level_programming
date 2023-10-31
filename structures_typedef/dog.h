@@ -5,11 +5,11 @@
 #include <stdlib.h>
 
 /*
- *struct dog- structured classified as a dog
- * 
- *@name: char pointer, pointing to the name of the dog
- *@age: age of dog, displayed as a float 
- *@owner: char pointer, pointing to the name of the owner
+ * Description: struct_dog - structured classified as a dog
+ *
+ * @name: char pointer, pointing to the name of the dog
+ * @age: age of dog, displayed as a float
+ * @owner: char pointer, pointing to the name of the owner
  *
  */
 typedef struct dog
@@ -17,7 +17,7 @@ typedef struct dog
 	char *name;
 	float age;
 	char *owner;
-}	
+}
 	dog_t;
 
 	void init_dog(struct dog *d, char *name, float age, char *owner);
