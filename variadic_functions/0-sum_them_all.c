@@ -22,6 +22,6 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		fsum += va_arg(sumof, int);
 	}
-	va_end (sumof);
+	va_end(sumof);
 	return (fsum);
 }
