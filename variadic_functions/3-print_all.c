@@ -6,7 +6,7 @@
  * Description:  print_all - function that prints anything
  *
  * @format: constant character being eecuted
- * 
+ *
  * Return: 0
  */
 void print_all(const char * const format, ...)
@@ -51,5 +51,5 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(list);
 }
-						
-				
+
+
