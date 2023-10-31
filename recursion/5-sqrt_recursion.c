@@ -1,31 +1,44 @@
 #include "main.h"
-int calculate_sqrt(int x, int y);
+#include <stdlib.h>
+
 /*
  * _sqrt_recursion- calculates the natural sqrt of a #
  *
+ * find_sq - recursive helper of _sqrt_recursion, adds second variable
+ *
  * @n: number input
+ * @request: input, potentially a canidate for sqrt n
+ *
  *
  * Return: natural sqrt of a #
  */
-int _sqrt_recursion(int n)
+int find_sq(int request, int n)
 {
+	if (request * request == n)
+	{
+		return (request);
+
+	else if (request * request < n)
+		
+		return (find_sq(request + 1 , n));
+	else 
+		return (-1);
+	}
+
+int _sqrt_recursion(int n)
+	
 	if (n < 0)
 	{
 		return (-1);
-	return (calculate_sqrt(n, 1));
-	}
 
-int calculate_sqrt(int x, int y)
-{
-	if (x <= y)
-	{
-		if (x * x == y)
-			retrun (x);
-		else 
-			return (calculate_sqrt(x, y + 1));
-	}
+	else if (n == 0)
+
+		return (0);
+	else if (n == 1) 
+		return (1);
+	
 	else 
 	
-		return (-1);
+		return (find_sq(2, n));
 	}
 }
