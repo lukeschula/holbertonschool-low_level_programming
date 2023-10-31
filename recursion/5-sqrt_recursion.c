@@ -12,33 +12,23 @@
  *
  * Return: natural sqrt of a #
  */
-int find_sq(int request, int n)
+int sqrt_check(int i, int t)
 {
-	if (request * request == n)
+	if (i * i == t)
 	{
-		return (request);
-
-	else if (request * request < n)
-		
-		return (find_sq(request + 1 , n));
-	else 
-		return (-1);
+		return (i);
 	}
-
+	if (i * i > t)
+	{
+		return(-1);
+	}
+	return (sqrt_check(i + 1, t));
+}
 int _sqrt_recursion(int n)
-	
-	if (n < 0)
+{
+	if (n == 0)
 	{
-		return (-1);
-
-	else if (n == 0)
-
 		return (0);
-	else if (n == 1) 
-		return (1);
-	
-	else 
-	
-		return (find_sq(2, n));
 	}
+	return (sqrt_check(1, n));
 }
