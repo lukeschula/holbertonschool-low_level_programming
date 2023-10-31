@@ -6,7 +6,7 @@
  *
  * @separator: pointer to the string to be printed
  * @n: number of strings passed through the argument
- * 
+ *
  * Return: printed numbers, followed by a new line
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -30,5 +30,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	printf("\n");
 	va_end(rr);
 }
-	
+
 
