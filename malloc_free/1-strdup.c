@@ -3,36 +3,38 @@
 #include "main.h"
 /**
  * _strdup: duplicates a string into newly allocated space in memory
- * 
+ *
  * str: string to duplicate
  *
  * Return: pointer to a new string
  */
 char *_strdup(char *str)
-{	
-	char *ary;
-	int i, j;
+{
+	int x;
+	int y = 0;
+	char *ptr
 
 	if (str == NULL)
-	{	
-		return(NULL);
-		i = 0;
-	}
-
-	while  (str[i] != '\0')
-	{
-		i++;
-	}
-
-	ary = malloc(sizeof(char) * i + 1);
-
-	if (ary == NULL)
 	{
 		return (NULL);
 	}
-	for (j = 0; str[j]; j++)
+
+	x = 0;
+	
+	while (str[x] != '\0')
 	{
-		ary[j] = str[j];
+		x++;
 	}
-	return (ary);
-}	
+
+	ptr = malloc(sizeof(char) * (x + 1));
+
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	for (y = 0; str[y]; y++)
+	{
+		ptr[y] = str[y]
+	}
+	return (ptr);
+}
