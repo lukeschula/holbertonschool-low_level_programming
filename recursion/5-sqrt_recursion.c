@@ -4,11 +4,12 @@
 /*
  * _sqrt_recursion- calculates the natural sqrt of a #
  *
- * find_sq - recursive helper of _sqrt_recursion, adds second variable
+ * sqrt_check - checks for the sqrt of t
  *
  * @n: number input
  * @request: input, potentially a canidate for sqrt n
- *
+ * @i: checks for sqrt
+ * @c: number to find sqrt of
  *
  * Return: natural sqrt of a #
  */
