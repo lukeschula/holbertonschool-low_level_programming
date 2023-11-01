@@ -21,7 +21,7 @@ int sqrt_check(int i, int t)
 	}
 	if (i * i > t)
 	{
-		return(-1);
+		return (-1);
 	}
 	return (sqrt_check(i + 1, t));
 }
