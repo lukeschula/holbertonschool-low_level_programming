@@ -26,10 +26,10 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		
+
 		c += atoi(argv[a]);
 	}
 	printf("%d\n", c);
-	
+
 	return (0);
 }
