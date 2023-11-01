@@ -2,7 +2,7 @@
 /**
  * main - a program that multiplies two numbers.
  *
- * @argc: argument count 
+ * @argc: argument count
  * @argv: argument vector
  *
  * Return: Error If the program does not receive two arguments
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		i = (atoi(argv[1]) * atoi(argv[2]));
-		printf("%d\n" , i);
+		printf("%d\n", i);
 		return (0);
 	}
-}	
+}
