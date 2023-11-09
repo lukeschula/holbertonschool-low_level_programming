@@ -26,10 +26,10 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 		new_no->str = strdup(str);
-		new_no->len = len
-		new_no->next = *head
+		new_no->len = len;
+		new_no->next = *head;
 		
-		*head = new_no
+		*head = new_no;
 
 
 return (*head);
