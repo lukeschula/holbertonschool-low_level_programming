@@ -6,13 +6,18 @@
  *
  * @head: pointer to the head of the list_t
  *
- * Return: 0
+ * Return: freed head pointer
  */
 void free_list(list_t *head)
 {
 	if (head == NULL)
 	{
-		return (-1);
+		return (NULL);
 	}
-	free (head);
+	else 
+	{
+		free_list(head->next);
+		free(head-str);
+		free(head);
+
 }
