@@ -5,3 +5,6 @@
  *
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
+{
+	unsigned int a = 0;
+	listin_t *ptr *phd
