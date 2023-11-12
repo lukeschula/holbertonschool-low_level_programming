@@ -13,11 +13,13 @@ size_t print_listint(const listint_t *h)
 	if (h)
 	{
 		printf("%i\n", h->n);
-	
+	}
 		if (h->next)
-	
+		{
 			num_of_el += print_listint(h->next);
 
 			return (num_of_el);
-	}
+		}
+		else 
+			return (0);
 }
