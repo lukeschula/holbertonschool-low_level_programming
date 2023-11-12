@@ -10,7 +10,7 @@ void free_listint(listint_t *head)
 
 	if (head == NULL)
 	{
-		return (NULL);
+		return;
 	}
 	while (*head)
 	{
@@ -19,5 +19,5 @@ void free_listint(listint_t *head)
 		*head = ptr;
 
 	}
-	*head = NULL
+	*head = NULL;
 }
