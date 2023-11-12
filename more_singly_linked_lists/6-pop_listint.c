@@ -14,3 +14,4 @@ int pop_listint(listint_t **head)
 		return (0);
 	}
 
+	data = (*head)->n;
