@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 /**
  *
  *
@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[x] != 0 || b[x] != 1)
 			return (0);
 	}
-	for (x = 0; b[x] != '\0'; x++;)
+	for (x = 0; b[x] != '\0'; x++)
 	{
 		v *= 2;
 		if (b[x] == '1')
