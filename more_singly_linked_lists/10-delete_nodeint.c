@@ -26,9 +26,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		a++;
 	}
 	if (phd == NULL || phd->next == NULL)
-	{	
+	{
 		return (-1);
-	
+
 		ptr = phd->next;
 		phd->next = ptr->next;
 	}
