@@ -8,7 +8,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t num_of_el = 1;
+	size_t num_of_el = 0;
 
 	if (h)
 	{
