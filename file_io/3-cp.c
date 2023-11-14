@@ -6,9 +6,9 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int a
-	int b
-	int c
+	int a;
+	int b;
+	int c;
 
 	if (filename == NULL)
 	{
