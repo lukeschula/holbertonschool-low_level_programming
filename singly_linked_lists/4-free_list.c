@@ -14,7 +14,7 @@ void free_list(list_t *head)
 	{
 		return;
 	}
-	else 
+	else
 	{
 		free_list(head->next);
 		free(head->str);
