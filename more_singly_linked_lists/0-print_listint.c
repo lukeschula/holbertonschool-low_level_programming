@@ -9,17 +9,16 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t num_of_el = 0;
-
-	if (h)
+	
+	if (h == NULL)
+	{
+		return (0);
+	}
+	while  (h != NULL)
 	{
 		printf("%d\n", h->n);
+		h = n->next;
+		num_of_el++;
 	}
-		if (h->next)
-		{
-			num_of_el += print_listint(h->next);
-
-			return (num_of_el);
-		}
-		else 
-			return (0);
+	return (num_of_el);
 }
