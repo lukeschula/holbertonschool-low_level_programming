@@ -30,6 +30,10 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		uture->next = presnt;
 
 	}
-
+	future->next = *head;
+	future->prev = NULL;
+	*head = future;
+	return (*head);
+}
 		
 	
