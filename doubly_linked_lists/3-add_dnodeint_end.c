@@ -13,7 +13,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	if (future == NULL)
 	{
-		return (NULL):
+		return (NULL);
 	}
 	future ->n =n; 
 	
@@ -25,9 +25,9 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		
 			present = present->next;
 
-		present->next = NULL;
-		present->next = future ;
-		uture->next = presnt;
+		future->next = NULL;
+		future->next = present;
+		present->next = future;
 
 	}
 	future->next = *head;
