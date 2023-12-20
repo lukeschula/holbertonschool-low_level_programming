@@ -10,11 +10,14 @@ int linear_search(int *array, size_t size, int value)
 
 	if (!array)
 		return (-1);
-	for (x = 0; x < size; x++)
+	for (; x < size; x++)
 	{
-		printf("Value hecked array[%d] = [%d]\n", (int) x, (int) array[x]);
+		printf("Value hecked array[%ld] = [%d]\n",  x,  array[x]);
 		if (array[x] == value)
-			return (x);
+			break;
 	}
-	return (-1);
+	if (x == size)
+		return(-1);
+	
+	return (x);
 }
