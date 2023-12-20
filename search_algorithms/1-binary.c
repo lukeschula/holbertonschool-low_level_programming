@@ -2,8 +2,8 @@
 /**
  * print_array - prints the array to analyze
  * @array: array to be printed
- * @left: left part of the array
- * @right: right part of the array
+ * @l: left part of the array
+ * @r: right part of the array
  * Return - Nothing
  *
  */
