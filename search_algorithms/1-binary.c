@@ -1,7 +1,10 @@
 #include "search_algos.h"
 /**
- *
- *
+ * print_array - prints the array to analyze
+ * @array: array to be printed
+ * @left: left part of the array
+ * @right: right part of the array
+ * Return - Nothing
  *
  */
 void print_array(int *array, size_t l, size_t r)
@@ -17,6 +20,11 @@ void print_array(int *array, size_t l, size_t r)
 	printf("\n");
 }
 /**
+ * binary_search - searches for a value in an array
+ * @array: pointer to the first element of the array
+ * @size: number of elements in the array
+ * @value: number to search for
+ * Return: where value is located
  *
  */
 int binary_search(int *array, size_t size, int value)
