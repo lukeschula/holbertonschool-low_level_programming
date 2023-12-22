@@ -1,6 +1,9 @@
 #include "lists.h"
 /**
- *
+ * add_dnodeint_end - function
+ * @head: linked lists
+ * @n: Number
+ * Return: address of the new element, or NULL
  *
  *
  */
