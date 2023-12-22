@@ -1,6 +1,9 @@
 #include "lists.h"
 /**
- *
+ * delete_dnodeint_at_index - function
+ * @head: linked lists
+ * @index: Index the list
+ * Return: 1 if it succeeded, -1
  *
  *
  */
