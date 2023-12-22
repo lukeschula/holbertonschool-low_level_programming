@@ -1,30 +1,30 @@
 #include "lists.h"
 /**
- *
- *
- *
+ * add_dnodeint- function
+ * @n: valor new node
+ * Return: address of the new element, or NULL
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *ptr;
+	dlistint_t *add_node;
 
-	ptr = malloc(sizeof(dlistint_t));
+	add_node = malloc(sizeof(dlistint_t));
 
-	if (ptr == NULL)
+	if (add_node == NULL)
 	
 		return (NULL);
 	
 
-	ptr->n = n;
-	ptr->prev = NULL;
-	ptr->next = *head;
+	add_node->n = n;
+	add_node->prev = NULL;
+	add_node->next = *head;
 
 	if (*head == NULL)
 	
-		(*head)->prev = ptr;
+		(*head)->prev = add_node;
 	
-	*head = ptr;
+	*head = add_node;
 
-	return (ptr);
+	return (add_node);
 }
 	
