@@ -2,6 +2,7 @@
 /**
  * add_dnodeint- function
  * @n: valor new node
+ * @head : pointer
  * Return: address of the new element, or NULL
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
